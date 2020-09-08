@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Print</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "./fonts/line-awesome-1.3.0/1.3.0/css/line-awesome.min.css" >
+    <!--Owl carosel assets-->
+    <link rel="stylesheet" href="./js/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.carousel.css">
+    <link  rel="stylesheet" href="./js/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.theme.css">
+    <link  rel="stylesheet" href="./js/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/assets/js/google-code-prettify/prettify.css">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+     <!--menu mobile-->
+     <div class="menu__mobile hide-menu">
+        <div class="menu__mobile-div">
+            <a href="#"><i class="las la-user icon-m"></i></a>
+            <a href="#"><i class="lar la-heart icon-m"></i></a>
+            <span class="close-menu"><i class="las la-times icon-m"></i></span>
+        </div>
+        <ul class="menu__mobile-ul">
+            <li><a href="#">Home<i class="fas fa-chevron-down icon icon-dropdown"></i></a></li>
+            <li><a href="#">about</a></li>
+            <li class="menu__mobile-ul-li"><a href="#">shop<i class="fas fa-chevron-down icon icon-dropdown "></i></a>
+                <!--menu- 2- mobile-->
+                <ul class="menu__mobile-ul-ul">
+                    <li><a href="#">Menu cấp 2</a></li>
+                    <li><a href="#">Menu cấp 2</a></li>
+                    <li><a href="#">Menu cấp 2</a></li>
+                    <li><a href="#">Menu cấp 2</a></li>
+                </ul>
+                <!--end menu 2 mobile-->
+            </li>
+            <li><a href="#">blogs<i class="fas fa-chevron-down icon icon-dropdown"></i></a>
+            </li>
+            <li class="menu__mobile-ul-li"><a href="#">pages<i class="fas fa-chevron-down icon icon-dropdown"></i></a>
+            <!--menu- 2- mobile-->
+                <ul class="menu__mobile-ul-ul">
+                    <li><a href="#">Menu cấp 2</a></li>
+                    <li><a href="#">Menu cấp 2</a></li>
+                    <li><a href="#">Menu cấp 2</a></li>
+                    <li><a href="#">Menu cấp 2</a></li>
+                </ul>
+            </li>
+            <!--end menu 2 mobile-->
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="menu__mobile-icon">
+            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+            <a href="#"><i class="fab fa-instagram icon"></i></a>
+            <a href="#"><i class="fab fa-twitter icon"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p icon"></i></a>
+        </div>
+    </div>
+    <!--end menu mobile-->
+    <div class="main-container">
+        <div class="contact">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="contact_phone">
+                    Call Us <span>+(581) 765-2289</span>
+                </div>
+                <div class="contact_text">
+                    Great news! Spend €1000 and get FREE SHIPPING!
+                </div>
+                <div class="contact_listIcon">
+                    <a href="#"><i class="lab la-facebook-f icon"></i></a>
+                    <a href="#"><i class="lab la-instagram icon"></i></a>
+                    <a href="#"><i class="lab la-twitter icon"></i></a>
+                    <a href="#"><i class="lab la-pinterest-p icon"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <!--end thông tin liên hệ-->
+        <div class="header">
+            <div class="header-nav container">
+                <div class="header-nav-logo">
+                    <a href="index.html">Wooler</a>
+                </div>
+                <div class="header-nav-menu">
+                    <div class="header-nav-menu__mobile"><i class="las la-bars icon-bars"></i>
+                    </div>
+                        <!-- end menu điện thoại-->
+                        <!--menu-desktop-->
+                    <div class=" nav nav-bar header-nav-menu__desktop">
+                        <div class="nav-item header-nav-menu-item"><a href="#">Home<i class="fas fa-chevron-down icon header-nav-menu-item-icon"></i></a></div>
+                        <div class="dropdown nav-item header-nav-menu-item">
+                            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" id="about" aria-expanded="false">
+                                about<i class="fas fa-chevron-down icon header-nav-menu-item-icon"></i>
+                            </a>
+                            <div class="dropdown-menu menu-2" aria-labelledby="about">
+                                <a href="#" class="dropdown-item">menu 2</a>
+                                <a href="#" class="dropdown-item">menu 2</a>
+                                <a href="#" class="dropdown-item">menu 2</a>
+                                <a href="#" class="dropdown-item">menu 2</a>
+                            </div>
+                        </div>       
+                        <div class="nav-item header-nav-menu-item"><a href="#"  class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" id="shop" aria-expanded="false">shop<i class="fas fa-chevron-down icon header-nav-menu-item-icon"></i></a>
+                            <div class="dropdown-menu menu-2" aria-labelledby="shop">
+                                <a href="#" class="dropdown-item">menu 2</a>
+                                <a href="#" class="dropdown-item">menu 2</a>
+                                <a href="#" class="dropdown-item">menu 2</a>
+                                <a href="#" class="dropdown-item">menu 2</a>
+                            </div>
+                        </div>
+                        <div class="nav-item header-nav-menu-item"><a href="#">blog<i class="fas fa-chevron-down icon header-nav-menu-item-icon"></i></a></div>                        
+                        <div class="nav-item header-nav-menu-item"><a href="#">pages<i class="fas fa-chevron-down icon header-nav-menu-item-icon"></i></a></div>
+                        <div class="nav-item header-nav-menu-item"><a href="#">contact</a></div>
+                    </div>
+                    <!--end menu desktop-->
+                </div>
+                <div class="header-nav-icon">
+                    <div class="nav">
+                        <a href="#"><i class="las la-search icon btn-search"></i></i>
+                            <input class="search" type="search" placeholder="Nhập từ khóa....">
+                        </a>
+                        <a href="#"><i class="lar la-heart icon"></i></a>
+                        <a href="#"><i class="las la-user icon"></i></a>
+                        <a href="#"><i class="las la-shopping-bag icon"></i>
+                            <span>1</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--end menu logo-->
+            <div class="header-banner container">
+                    <h2>We love<br> printing photos on <span>canvas</span></h2>
+                    <button class="b-button">Explore Now</button>
+            </div>
+        </div>
+        <!--end header-->
+        <div class="content">
+            <div class="container">
+                <div class="content-article">
+                    <article>Make it your own</article>
+                    <p class="t-text">Anybody can create beautiful prints with our intuitive builders.</p>
+                </div>
+                <div class="content-grid">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-12">
+                            <i class="lar la-image list-icon"></i><br>
+                            <a href="#" class="title-1">01. Choose an image </a>
+                            <p>Any image, any size or resolution. Upload from your computer or directly from Instagram or Facebook. Works with almost any size image!</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12">
+                            <i class="las la-comment-dollar list-icon"></i><br>
+                            <a href="#" class="title-1">02. Customize </a>
+                            <p>Choose the perfect size, framing options and even add one of our amazing photo filters and effects to make your image really pop!</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12">
+                            <i class="las la-shipping-fast list-icon"></i><br>
+                            <a href="#" class="title-1">03.Shipping</a>
+                            <p>We'll do the rest. Your canvas print is lovingly printed, hand-stretched and carefully packed and delivered to you in a few days.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end content box 1-->
+        <div class="content">
+            <div class="container">
+                <div class="content-article">
+                    <article>Our products</article>
+                    <p class="t-text">We offer more than just Canvas Prints</p>
+                </div>
+                <div class="content-grid slider">
+                    <button class="btn-pre"><i class="las la-angle-left"></i></button>
+                    <div id="slide-show" class="owl-carousel slide-show ">
+                        <div class="item">
+                            <img src="images/1.png" class="slide-show-img" alt="ảnh 1">
+                            <a href="#">Minimalscape Print</a>
+                            <p><span></span>$12</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/2.png" class="slide-show-img" alt="ảnh 1">
+                            <a href="#">Minimalscape Print</a>
+                            <p><span></span>$12</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/3.png" class="slide-show-img" alt="ảnh 1">
+                            <a href="#">Minimalscape Print</a>
+                            <p><span>$24</span>$12</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/4.png" class="slide-show-img" alt="ảnh 1">
+                            <a href="#">Minimalscape Print</a>
+                            <p><span></span>$12</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/3.png" class="slide-show-img" alt="ảnh 1">
+                            <a href="#">Minimalscape Print</a>
+                            <p><span>$24</span>$12</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/1.png" class="slide-show-img" alt="ảnh 1">
+                            <a href="#">Minimalscape Print</a>
+                            <p><span></span>$12</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/2.png" class="slide-show-img" alt="ảnh 1">
+                            <a href="#">Minimalscape Print</a>
+                            <p><span></span>$12</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/3.png" class="slide-show-img" alt="ảnh 1">
+                            <a href="#">Minimalscape Print</a>
+                            <p><span>$24</span>$12</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/4.png" class="slide-show-img" alt="ảnh 1">
+                            <a href="#">Minimalscape Print</a>
+                            <p><span></span>$12</p>
+                        </div>
+                    </div>
+                    <button class="btn-next"><i class="las la-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!--end content box 2-->
+        <div class="content">
+            <div class="container">
+                <div class="content-article">
+                    <article>Choose a category</article>
+                    <p class="t-text">We offer more than just Canvas Prints</p>
+                </div>
+                <div class="content-grid">
+                    <div class="content-grid-item">
+                        <div>
+                            <img src="images/category1.jpg" alt="photo collages">
+                            <a href="#" class="title-3">photo collages</a>
+                            <p class="text-3">A beautiful way to display your photo memories</p>
+                        </div>
+                        <div>
+                            <img src="images/category2.jpg" alt="photo collages">
+                            <a href="#" class="title-3">framed print</a>
+                            <p class="text-3">Have your photos printed on artist-quality, fine art paper
+                                and expertly fitted with a gorgeous wood frame</p>
+                        </div>
+                        <div>
+                            <img src="images/category3.jpg" alt="photo collages">
+                            <a href="#" class="title-3">canvas print</a>
+                            <p class="text-3">Preserve your photo memories on the highest quality 
+                                canvas available</p>
+                        </div>
+                        <div>
+                            <img src="images/category4.jpg" alt="photo collages">
+                            <a href="#" class="title-3">pet portraits</a>
+                            <p class="text-3">Creat a custom portrait that perfectly captures your pet
+                                and their personality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end content box 3-->
+        <div class="content">
+            <div class="container">
+                <div class="content-article">
+                    <article>Made with love</article>
+                    <p class="t-text container">That’s right, we love what we do and we take pride in making the best canvas and framed prints in the world.</p>
+                </div>
+                <div class="content-grid">
+                    <div class="content-grid-button">
+                        <button>Creat your own</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end box 4-->
+        <!--footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 footer-column col-12">
+                        <article>Categories</article>
+                        <a href="#">Skateboard Completed</a>
+                        <a href="#">Skateboard Desks</a>
+                        <a href="#">Skateboard Wheels</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">T-Shirts</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 footer-column">
+                        <article>ABOUT US</article>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Privacy & Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 footer-column">
+                        <article>CONTACT</article>
+                        <p href="#"><b>Address:</b> 249 Cherry St.
+                            Arlington Heights, IL 60004, United States of America</p>
+                        <p href="#"><b>Phone:</b> +(581) 765-2289; </p>
+                        <p href="#"><b>Hours:</b> All Week from 9 a.m to 9 p.m</p>
+                        <p href="#"><b>Email:</b> wow.perfect@gmail.com</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 footer-column">
+                        <article>NEWSLETER</article>
+                        <p>Sign up for our e-mail and be the first who know our special offers!</p>
+                        <div class="footer-column-input">
+                            <input type="email" placeholder="Your email">
+                            <i class="las la-paper-plane icon-send"></i>
+                        </div>
+                        <div class="d-flex footer-column-icon"> 
+                            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                            <a href="#"><i class="fab fa-instagram icon"></i></a>
+                            <a href="#"><i class="fab fa-twitter icon"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p><i class="far fa-copyright"></i>Wow 2020. All Rights Reserved</p>
+        </div>
+        <!--end footer-->
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.carousel.js"></script>
+
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>

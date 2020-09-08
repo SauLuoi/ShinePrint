@@ -1,0 +1,80 @@
+$(document).ready(function(){
+    $('.slider').each(function(){
+        var owl = $("#slide-show", this);
+        owl.owlCarousel({
+        loop:false,
+        margin:0,
+        responsiveClass:true,
+        items:4,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            475:{
+                items:2,
+            },
+            767:{
+                items:2,
+            },
+            768:{
+                items:3,
+            },
+            1000:{
+                items:4,
+                nav:false,
+                loop:false
+            }
+        }
+        });
+        let owlData = owl.data('owlCarousel');
+        $('.btn-next').click(function() {
+            owl.trigger('next.owl.carousel');
+            owl.trigger('checkNavigation.owl.carousel');
+        });
+        $('.btn-pre').click(function() {
+            owl.trigger('prev.owl.carousel');
+        });
+        $(".owl-item:last-child").each(function(){
+            if(document.getElementsByClassName('active').length){
+                $('.btn-next').addClass('a');
+            }
+            else{
+                $('.btn-next').removeClass('a');
+            }
+        });
+        $(".owl-item:first-child").each(function(){
+            if(document.getElementsByClassName('active').length){
+                $('.btn-pre').addClass('a');
+            }
+            else{
+                $('.btn-pre').removeClass('a');
+            }
+        });
+    });
+    $('.header__nav-bar-icon').click(function()
+    {
+        $('.header__mobile').addClass("show-menu");
+        $('.header__mobile').removeClass("hide-menu-");
+        $('.header__mobile').removeClass("hide-menu");
+        $('.filler').addClass("filler-black");
+    });
+    $('.close').click(function(){
+        $('.header__mobile').removeClass("show-menu");
+        $('.header__mobile').addClass("hide-menu-");
+        $('.header__mobile').addClass("hide-menu");
+        $('.filler').removeClass("filler-black");
+    });
+    $('.filler').click(function(){
+        $('.header__mobile').removeClass("show-menu");
+        $('.header__mobile').addClass("hide-menu-");
+        $('.header__mobile').addClass("hide-menu");
+        $('.filler').removeClass("filler-black");
+    });
+
+    $('.header__mobile').each(function(){
+        $('.m-menu-1').click(function (e) { 
+            $('.m-menu-2',this).toggle();
+        });
+    })
+})

@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    a{
+        color: $color-primary;
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+            color: $color-button-primary;
+        }
+    }
+    img{
+        width: 100%;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    li{
+        list-style: none;
+    }
+    button{
+        background: none;
+        border: none;
+        &:focus{
+            outline:none;
+        }
+    }
+
+    .container{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .filler-black{
+        filter: brightness(0.3);
+        background-blend-mode: color;
+        z-index: 3;
+        background-color: #000000b5 !important;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    //class dùng chung
+    .icon{
+        font-size: 16px;
+        color: $color-text;
+        padding-left: 1rem;
+    }
+    .btn-{
+        border-radius: 3px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.47;
+        margin-top: 40px;
+        padding: 13px 35px;
+    }
+    .article{
+        text-align: center;
+        padding: 8px 0 40px;
+        p{
+            &:first-child{
+                font-size: 36px;
+                font-weight: bold;
+                line-height: 1.28;
+                color: $color-primary;
+            }
+            &:last-child{
+                font-size: 16px;
+                line-height: 1.5;
+                color: $color-text-primary;
+                max-width: 650px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
