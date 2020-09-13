@@ -1,2 +1,3 @@
 # ShinePrint
-project first
+Design by ShineTheme
+Code by SaauLuoi
