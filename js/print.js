@@ -2,55 +2,51 @@ $(document).ready(function(){
     $('.slider').each(function(){
         var owl = $("#slide-show", this);
         owl.owlCarousel({
-        loop:false,
-        margin:0,
-        responsiveClass:true,
-        items:4,
-        responsive:{
-            0:{
-                items:1,
-                nav:false
+            loop:false,
+            nav:false,
+            margin:0,
+            responsiveClass:true,
+            items:4,
+            dots:true,
+            responsive:{
+                0:{
+                    items:1,
+                },
+                475:{
+                    items:2,
+                },
+                767:{
+                    items:2,
+                },
+                768:{
+                    items:3,
+                },
+                1000:{
+                    items:4,
+                }
             },
-            475:{
-                items:2,
-            },
-            767:{
-                items:2,
-            },
-            768:{
-                items:3,
-            },
-            1000:{
-                items:4,
-                nav:false,
-                loop:false
-            }
-        }
+            onTranslated : callback
         });
         let owlData = owl.data('owlCarousel');
-        $('.btn-next').click(function() {
+        $('.btn-next',this).click(function() {
             owl.trigger('next.owl.carousel');
-            owl.trigger('checkNavigation.owl.carousel');
         });
-        $('.btn-pre').click(function() {
+        $('.btn-pre',this).click(function() {
             owl.trigger('prev.owl.carousel');
         });
-        $(".owl-item:last-child").each(function(){
-            if(document.getElementsByClassName('active').length){
-                $('.btn-next').addClass('a');
+        callback();
+        function callback(){
+            if($('.owl-item', owl).eq(0).hasClass('active')){
+                $('.btn-pre').addClass('g');
+            }else{
+                $('.btn-pre').removeClass('g');
             }
-            else{
-                $('.btn-next').removeClass('a');
+            if($('.owl-item',owl).eq(-1).hasClass('active')){
+                $('.btn-next').addClass('g');
+            }else{
+                $('.btn-next').removeClass('g');
             }
-        });
-        $(".owl-item:first-child").each(function(){
-            if(document.getElementsByClassName('active').length){
-                $('.btn-pre').addClass('a');
-            }
-            else{
-                $('.btn-pre').removeClass('a');
-            }
-        });
+        };
     });
     $('.header__nav-bar-icon').click(function()
     {
